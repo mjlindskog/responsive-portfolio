@@ -1,0 +1,463 @@
+:root{
+    --light-blue: #4682b4;
+    --grey-blue:  #f0f8ff;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 1;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 1 auto;
+    border: solid 3px var(--light-blue);
+}
+
+.header {
+    font-family: sans-serif;
+    background-color: var(--light-blue);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    padding-left: 25px;
+    padding-right: 150px;
+}
+
+.header nav {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+
+.header nav ul {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.header nav ul li {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+.background {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./img/swirls.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    flex-direction: column;
+    color: var(--light-blue);
+    font-size: 2.5rem;
+    padding-left: 20px;
+}
+
+main {
+    display:inline-block;
+    flex-wrap: wrap;
+}
+
+.content {
+    position: relative;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+#about-me, #portfolio {
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    padding-bottom: 2%;
+    border-bottom: solid 3px var(--light-blue);
+}
+
+#about-me:hover {
+    color: var(--light-blue);
+}
+
+#portfolio {
+    background-color: var(--grey-blue);
+}
+
+.about {
+    flex: 1 0 0;
+    margin: auto;
+}
+
+p {
+    display:inline;
+    color: var(--light-blue);
+    text-align:center;
+    font-size: 1.5rem;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#avatar {
+    display: inline;
+    border: solid 3px var(--light-blue);
+    background-color: var(--grey-blue);
+    border-radius: 15%;
+    width: 320px;
+}
+
+p:hover{
+    color: var(--light-blue)
+}
+
+#portfolio h2 {
+    margin-top: 405px;
+}
+
+#project-box {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+}
+
+#project-box ul {
+    display: inline;
+    list-style: none;
+    list-style-type: none;
+}
+
+#project-box ul li {
+    display: inline;
+    position: relative;
+}
+
+.bottom-left {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 14px;
+    left: 10px;
+    text-align: right;
+    background-color: var(--light-blue);
+    color: white;
+    padding-top: 15px;
+    padding-left: 12px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.coming-soon {
+    width: 410px;
+    height: 410px;
+    border: solid 3px var(--light-blue);
+    opacity: 50%;
+    margin: 10px;
+}
+
+.coming-soon:hover {
+    opacity: 100%;
+    height: 420px;
+    width: 420px;
+}
+
+#contact-me {
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+#contact-me h2 {
+    margin:10 0px;
+}
+
+#contact-me ul li {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-bottom:10px;
+    margin-left: 147px;
+    margin-right: 50px;
+} 
+
+#contact-me ul li a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+#contact-me ul li a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+#contact-me ul li a:active {
+    color: red;
+}
+
+footer {
+    padding: 1%;
+    text-align: center;
+    color: white;
+    background-color: var(--light-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .header nav {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    main{
+        width: 100%;
+    }
+    
+    #contact-me h2 {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    #portfolio h2 {
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #portfolio {
+        display: block;
+        padding: 10px 118px;
+        justify-content: center;
+    }
+
+
+    #project-box ul {
+        width: 100%;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #project-box ul li {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .coming-soon {
+        justify-content: center;
+        width: 380px;
+        height: 380px;
+    }
+
+    .coming-soon:hover {
+        width: 395px;
+        height: 395px;
+    }
+
+    #contact-me ul li {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+        margin-top: 5px;
+        margin-bottom:10px;
+        margin-left: 120px;
+        margin-right: 0px;
+    } 
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .header nav {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .header nav ul {
+        width: 100%;
+        Padding: 5px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    
+    main{
+        width: 100%;
+    }
+    
+    #about-me {
+        width: 100%;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #contact-me h2 {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    #portfolio {
+        display: block;
+        justify-content: center;
+    }
+
+    #portfolio h2 {
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #project-box ul {
+        width: 100%;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #project-box ul li {
+        width: 100%;
+    }
+
+    .coming-soon {
+        width: 275px;
+        height: 275px;
+    }
+
+    .coming-soon:hover {
+        width: 285px;
+        height: 285px;
+    }
+
+    .bottom-left {
+        position: absolute;
+        font-size: 1rem;
+        bottom: 14px;
+        left: 10px;
+        text-align: right;
+        background-color: var(--light-blue);
+        color: white;
+        padding: auto;
+    }
+
+    #contact-me ul li {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+        margin-top: 5px;
+        margin-bottom:10px;
+        margin-left: 70px;
+        margin-right: 0px;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    #portfolio {
+        display: flex;
+        justify-content: center;
+    }
+
+    #portfolio h2 {
+        display: contents;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #project-box ul {
+        width: 100%;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #project-box ul li {
+        position: relative;
+        width: 100%;
+    }
+
+    .coming-soon {
+        position: relative;
+        width: 275px;
+        height: 275px;
+    }
+
+    .coming-soon:hover {
+        width: 285px;
+        height: 285px;
+    }
+
+    .bottom-left {
+        position: absolute;
+        font-size: 1rem;
+        bottom: 14px;
+        left: 10px;
+        text-align: right;
+        padding: auto;
+    }
+
+    #contact-me ul li {
+        display: flex;
+    } 
+} 
