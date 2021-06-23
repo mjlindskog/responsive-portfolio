@@ -1,17 +1,13 @@
 :root{
     --light-blue: #4682b4;
-    --grey-blue:  #f0f8ff;
+    --grey-blue:  #c2dcf3;
 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 1;
-}
+
 
 body {
     font-family: sans-serif;
-    margin: 1 auto;
     border: solid 3px var(--light-blue);
 }
 
@@ -19,42 +15,38 @@ body {
     font-family: sans-serif;
     background-color: var(--light-blue);
     color: white;
-    display: flex;
-    flex-wrap: wrap;
 
 } 
 
 .header h1 {
-    display: inline-block;
     font-size: 48px;
-    padding-left: 25px;
-    padding-right: 150px;
-}
 
-.header nav {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 1.8rem;
-    margin-right: 5px;
-    margin-top: 25px;
 }
-
-.header nav ul {
-    margin-top: 10px;
-    text-align: right;
-}
-
-.header nav ul li {
-    display: inline-flex;
-    margin-top: 10px;
-    margin-bottom:10px;
-    margin-left: 20px;
-    margin-right: 20px;
-} 
 
 a {
-    color: #ffffff;
     text-decoration: none;
+}
+
+.carouselp {
+    background-color: white;
+    color: var(--light-blue);
+    font-weight: bold;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.carousleh {
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+
+.list-group-item{
+    background-color: var(--light-blue);
 }
 
 nav a:hover {
@@ -62,42 +54,27 @@ nav a:hover {
 }
 
 .background {
-    height: 300px;
+    /* height: 500px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("./img/swirls.jpeg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("./img/keyboard.png");
+    background-size: contain;
+    background-position: center; */
+    background-color: var(--light-blue);
 }
 
 h2 {
-    display: inline-block;
-    position: relative;
-    flex-direction: column;
     color: var(--light-blue);
     font-size: 2.5rem;
-    padding-left: 20px;
 }
 
-main {
-    display:inline-block;
-    flex-wrap: wrap;
-}
 
-.content {
-    position: relative;
-    flex: 4;
-    flex-wrap: wrap;
-    justify-content: right;
-}
-
-#about-me, #portfolio {
+#about-me {
     display: flex;
     box-sizing: border-box;
     padding: 5px;
     flex-wrap: wrap;
     vertical-align: middle;
-    padding-bottom: 2%;
     border-bottom: solid 3px var(--light-blue);
 }
 
@@ -107,6 +84,12 @@ main {
 
 #portfolio {
     background-color: var(--grey-blue);
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    flex-wrap: wrap;
+    vertical-align: top;
+    border-bottom: solid 3px var(--light-blue);
 }
 
 .about {
@@ -128,63 +111,14 @@ p {
     border: solid 3px var(--light-blue);
     background-color: var(--grey-blue);
     border-radius: 15%;
-    width: 320px;
+    /* width: 320px; */
 }
 
 p:hover{
     color: var(--light-blue)
 }
 
-#portfolio h2 {
-    margin-top: 405px;
-}
-
-#project-box {
-    display:flex;
-    flex-wrap: wrap;
-    flex: 1 0 0;
-}
-
-#project-box ul {
-    display: inline;
-    list-style: none;
-    list-style-type: none;
-}
-
-#project-box ul li {
-    display: inline;
-    position: relative;
-}
-
-.bottom-left {
-    position: absolute;
-    font-size: 1.5rem;
-    bottom: 14px;
-    left: 10px;
-    text-align: right;
-    background-color: var(--light-blue);
-    color: white;
-    padding-top: 15px;
-    padding-left: 12px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-}
-
-.coming-soon {
-    width: 410px;
-    height: 410px;
-    border: solid 3px var(--light-blue);
-    opacity: 50%;
-    margin: 10px;
-}
-
-.coming-soon:hover {
-    opacity: 100%;
-    height: 420px;
-    width: 420px;
-}
-
-#contact-me {
+/* #contact-me {
     display: flex;
     box-sizing: border-box;
     padding: 5px;
@@ -202,7 +136,7 @@ p:hover{
     margin-bottom:10px;
     margin-left: 147px;
     margin-right: 50px;
-} 
+}  */
 
 #contact-me ul li a:link {
     color: blue;
@@ -224,8 +158,25 @@ footer {
     color: white;
     background-color: var(--light-blue);
 }
+/* @media screen and (max-width: 1114px) {
+    .background {
+        height: 430px;
+    }
+    
+}
+
+@media screen and (max-width: 1114px) {
+    .background {
+        height: 430px;
+    }
+    
+} */
 
 @media screen and (max-width: 768px) {
+    /* .background {
+        height: 300px;
+    } */
+    
     .header {
         width: 100%;
         justify-content: center;
@@ -263,7 +214,7 @@ footer {
 
     #portfolio {
         display: block;
-        padding: 10px 118px;
+        padding: 10px;
         justify-content: center;
     }
 
@@ -280,18 +231,7 @@ footer {
         width: 100%;
     }
 
-    .coming-soon {
-        justify-content: center;
-        width: 380px;
-        height: 380px;
-    }
-
-    .coming-soon:hover {
-        width: 395px;
-        height: 395px;
-    }
-
-    #contact-me ul li {
+    /* #contact-me ul li {
         display: inline;
         width: 100%;
         text-align: center;
@@ -301,7 +241,7 @@ footer {
         margin-bottom:10px;
         margin-left: 120px;
         margin-right: 0px;
-    } 
+    }  */
 }
 
 @media screen and (max-width: 576px) {
@@ -377,28 +317,7 @@ footer {
         width: 100%;
     }
 
-    .coming-soon {
-        width: 275px;
-        height: 275px;
-    }
-
-    .coming-soon:hover {
-        width: 285px;
-        height: 285px;
-    }
-
-    .bottom-left {
-        position: absolute;
-        font-size: 1rem;
-        bottom: 14px;
-        left: 10px;
-        text-align: right;
-        background-color: var(--light-blue);
-        color: white;
-        padding: auto;
-    }
-
-    #contact-me ul li {
+    /* #contact-me ul li {
         display: inline;
         width: 100%;
         text-align: center;
@@ -408,7 +327,7 @@ footer {
         margin-bottom:10px;
         margin-left: 70px;
         margin-right: 0px;
-    }
+    } */
 } 
 
 @media screen and (max-width: 375px) {
@@ -437,27 +356,7 @@ footer {
         width: 100%;
     }
 
-    .coming-soon {
-        position: relative;
-        width: 275px;
-        height: 275px;
-    }
-
-    .coming-soon:hover {
-        width: 285px;
-        height: 285px;
-    }
-
-    .bottom-left {
-        position: absolute;
-        font-size: 1rem;
-        bottom: 14px;
-        left: 10px;
-        text-align: right;
-        padding: auto;
-    }
-
-    #contact-me ul li {
+    /* #contact-me ul li {
         display: flex;
-    } 
+    }  */
 } 
