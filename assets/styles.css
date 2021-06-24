@@ -39,10 +39,14 @@ a {
 }
 
 .carousleh {
-    background-color: var(--light-blue);
+    background-color: white;
+    color: var(--light-blue);
+    font-weight: bold;
+    border-style: solid;
+    border-width: 4px;
     border-radius: 10px;
-    padding-left: 3px !important;
-    padding-right: 3px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
 }
 
 .list-group-item{
